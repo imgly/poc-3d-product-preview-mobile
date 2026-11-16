@@ -1,0 +1,36 @@
+{
+  "id": "mug-11oz",
+  "order": 1,
+  "name": "Photo mug, 11 oz",
+  "model": {
+    "glb": "model.glb",
+    "obj": "model.obj",
+    "printMaterial": "print_area",
+    "uvLayout": "print_area UVs cover [0,1]x[0,1] = the whole design page. u: left to right around the mug, starting next to the handle. v: top to bottom."
+  },
+  "printArea": {
+    "widthInch": 8.5,
+    "heightInch": 3.5,
+    "dpi": 300,
+    "previewTextureWidthPx": 2048
+  },
+  "template": {
+    "backgroundColor": "#FFFFFF",
+    "image": {
+      "uri": "https://img.ly/static/ubq_samples/sample_4.jpg",
+      "frameInch": { "x": 0.25, "y": 0.25, "width": 3.0, "height": 3.0 }
+    },
+    "text": {
+      "value": "Best Dad Ever",
+      "frameInch": { "x": 3.5, "y": 1.1, "width": 4.75, "height": 1.3 },
+      "colorHex": "#1F3A5F",
+      "fontSizePt": 48
+    }
+  },
+  "viewer": {
+    "cameraDistanceM": 0.40,
+    "targetYM": 0.048,
+    "initialYawDeg": -30,
+    "autoRotateDegPerSec": 25
+  }
+}

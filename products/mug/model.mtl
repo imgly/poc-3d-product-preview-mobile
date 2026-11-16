@@ -1,0 +1,11 @@
+newmtl print_area
+Kd 1.000 1.000 1.000
+Ks 0.200 0.200 0.200
+Ns 60
+d 1.0
+
+newmtl ceramic
+Kd 0.960 0.960 0.950
+Ks 0.200 0.200 0.200
+Ns 60
+d 1.0

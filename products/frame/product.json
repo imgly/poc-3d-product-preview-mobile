@@ -1,0 +1,36 @@
+{
+  "id": "frame-8x10",
+  "order": 2,
+  "name": "Framed photo, 8 x 10 in",
+  "model": {
+    "glb": "model.glb",
+    "obj": "model.obj",
+    "printMaterial": "print_area",
+    "uvLayout": "print_area UVs cover [0,1]x[0,1] = the whole design page. u: left to right, v: top to bottom, seen from the front."
+  },
+  "printArea": {
+    "widthInch": 8.0,
+    "heightInch": 10.0,
+    "dpi": 300,
+    "previewTextureWidthPx": 1600
+  },
+  "template": {
+    "backgroundColor": "#FFFFFF",
+    "image": {
+      "uri": "https://img.ly/static/ubq_samples/sample_1.jpg",
+      "frameInch": { "x": 0.5, "y": 0.5, "width": 7.0, "height": 7.4 }
+    },
+    "text": {
+      "value": "Summer 2026",
+      "frameInch": { "x": 0.5, "y": 8.2, "width": 7.0, "height": 1.2 },
+      "colorHex": "#333333",
+      "fontSizePt": 60
+    }
+  },
+  "viewer": {
+    "cameraDistanceM": 0.75,
+    "targetYM": 0.0,
+    "initialYawDeg": -20,
+    "autoRotateDegPerSec": 20
+  }
+}

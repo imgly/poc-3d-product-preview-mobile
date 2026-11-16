@@ -1,0 +1,33 @@
+name: ProductPreview
+options:
+  bundleIdPrefix: ly.img.poc
+  deploymentTarget:
+    iOS: "16.0"
+packages:
+  IMGLYUI:
+    url: https://github.com/imgly/IMGLYUI-swift
+    exactVersion: 1.86.2
+targets:
+  ProductPreview:
+    type: application
+    platform: iOS
+    sources:
+      - path: ProductPreview
+      - path: ../products
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: IMGLYUI
+        product: IMGLYEditor
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ly.img.poc.productpreview
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "3D Preview"
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Add your photos to the design."
+        INFOPLIST_KEY_NSCameraUsageDescription: "Take a photo for the design."
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        CODE_SIGNING_ALLOWED: NO
